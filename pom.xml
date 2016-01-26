@@ -15,4 +15,40 @@
 			<version>9.3.7.RC0</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.3.7.RC0</version>
+				<configuration>
+					<stopPort>9966</stopPort>
+					<stopKey>stopKey</stopKey>
+					<stopWait>20</stopWait>
+					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<webApp>
+						<contextPath>/test</contextPath>
+					</webApp>
+					<war>${project.build.directory}/${project.build.finalName}.jar</war>
+				</configuration>
+				<executions>
+					<execution>
+						<id>start-jetty</id>
+						<phase>test-compile</phase>
+						<goals>
+							<goal>deploy-war</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>stop-jetty</id>
+						<phase>test</phase>
+						<goals>
+							<goal>stop</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

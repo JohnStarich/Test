@@ -15,7 +15,7 @@ public class TestHandler extends AbstractHandler {
 	public void handle(String s, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		response.setContentType("text/html; charset=utf-8");
 		response.setStatus(HttpServletResponse.SC_OK);
-		response.getWriter().println("<h1>Hello World!</h1>");
+		response.getWriter().println("<h1>Hello World!</h1> <p>This is some sample text</p>");
 		baseRequest.setHandled(true);
 	}
 }

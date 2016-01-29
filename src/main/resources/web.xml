@@ -5,6 +5,7 @@
 		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_0.xsd"
 		metadata-complete="false"
 		version="3.0">
+	<display-name>Test</display-name>
 	<servlet>
 		<servlet-name>Test</servlet-name>
 		<servlet-class>com.johnstarich.test.TestHandler</servlet-class>

@@ -29,7 +29,7 @@
 					<stopWait>20</stopWait>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/test</contextPath>
+						<contextPath>/</contextPath>
 					</webApp>
 				</configuration>
 				<executions>

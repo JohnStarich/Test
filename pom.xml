@@ -29,7 +29,7 @@
 					<stopWait>20</stopWait>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/</contextPath>
+						<contextPath>/test</contextPath>
 					</webApp>
 				</configuration>
 				<executions>
@@ -52,7 +52,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.4.2</version>
+				<version>2.7</version>
 				<executions>
 					<execution>
 						<id>default-copy-resources</id>
